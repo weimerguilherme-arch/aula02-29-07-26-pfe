@@ -151,40 +151,7 @@ This is a guide for connecting a Vanilla JS form to Formspree using AJAX. For co
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 ```
 
-## With a bundler (ESM)
 
-```bash
-npm install @formspree/ajax
-```
-
-```js
-import { initForm } from '@formspree/ajax';
-initForm({ formElement: '#my-form', formId: 'mojgzjov' });
-```
-
-Data attributes:
-- `data-fs-field` — input to receive aria-invalid on error
-- `data-fs-error` — displays field-level or form-level error messages
-- `data-fs-success` — displays success message after submission
-- `data-fs-submit-btn` — disabled during submission, re-enabled on completion
-
-For more information, consult the README at https://github.com/formspree/formspree-js/tree/master/packages/formspree-ajax and the AJAX guide at https://help.formspree.io/hc/en-us/articles/360013470814-Submit-forms-with-JavaScript-AJAX
-
----
-
-# React
-
-```bash
-npm install @formspree/react
-```
-
-```jsx
-import { useForm, ValidationError } from '@formspree/react';
-
-function ContactForm() {
-  const [state, handleSubmit] = useForm('mojgzjov');
-  if (state.succeeded) return <p>Thanks!</p>;
-  return (
     <form onSubmit={handleSubmit}>
       <input type="email" name="email" required />
       <ValidationError field="email" errors={state.errors} />
@@ -194,10 +161,3 @@ function ContactForm() {
     </form>
   );
 }
-```
-
-For more information, see the @formspree/react documentation at https://github.com/formspree/formspree-js/tree/master/packages/formspree-react and the Formspree React guide at https://help.formspree.io/hc/en-us/articles/360055613373-Formspree-React
-
----
-
-Based on the tech stack, apply the matching guide above and suggest any needed code changes.
