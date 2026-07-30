@@ -3,106 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurgel Motores - A História da Pioneira Brasileira</title>
+    <title>Blog do Guilherme e do Raphael - Eron Domingues</title>
     <style>
         :root {
-            --primary-color: #b30000;
-            --secondary-color: #1a1a1a;
-            --bg-color: #f4f4f9;
-            --text-color: #333;
-            --white: #fff;
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --accent: #ed8936;
+            --bg: #f7fafc;
+            --text: #2d3748;
         }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
         }
-
         header {
-            background-color: var(--secondary-color);
-            color: var(--white);
-            padding: 2.5rem 1rem;
+            background-color: var(--primary);
+            color: white;
             text-align: center;
-            border-bottom: 5px solid var(--primary-color);
+            padding: 2.5rem 1rem;
         }
-
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
+            font-size: 2.2rem;
         }
-
         header p {
             margin-top: 0.5rem;
-            color: #ccc;
-            font-size: 1.1rem;
+            color: #cbd5e0;
         }
-
         .container {
             max-width: 900px;
             margin: 2rem auto;
-            padding: 0 1.5rem;
+            padding: 0 1rem;
         }
-
         .card {
-            background-color: var(--white);
-            padding: 2.5rem;
+            background: white;
+            padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary);
         }
-
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.5rem;
+        .card.raphael {
+            border-left-color: var(--accent);
+        }
+        .card h2 {
             margin-top: 0;
+            color: var(--primary);
         }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+        .card.raphael h2 {
+            color: var(--accent);
         }
-
-        .car-item {
-            background: #fafafa;
-            border: 1px solid #eaeaea;
-            border-radius: 6px;
-            overflow: hidden;
-            text-align: center;
-            padding-bottom: 1rem;
+        .meta {
+            font-size: 0.85rem;
+            color: #a0aec0;
+            margin-bottom: 1rem;
         }
-
-        .car-item img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .car-item h3 {
-            margin: 1rem 0 0.3rem 0;
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-        }
-
-        .car-item p {
-            font-size: 0.9rem;
-            padding: 0 0.8rem;
-            color: #666;
-        }
-
         footer {
-            background-color: var(--secondary-color);
-            color: var(--white);
             text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 3rem;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #4a5568;
             font-size: 0.9rem;
         }
     </style>
@@ -110,50 +73,28 @@
 <body>
 
     <header>
-        <h1>GURGEL MOTORES</h1>
-        <p>A genialidade e a ousadia da indústria automotiva nacional</p>
+        <h1>Blog Escolar | Eron Domingues</h1>
+        <p>Espaço de Guilherme e Raphael</p>
     </header>
 
     <div class="container">
-        <section class="card">
-            <h2>A Origem (1969)</h2>
-            <p>Fundada em 1º de setembro de 1969 por João Augusto Gurgel do Amaral Oliveira, na cidade de Rio Claro (SP), a <strong>Gurgel Motores</strong> nasceu com o propósito audacioso de criar carros genuinamente brasileiros. Engenheiro formado pela Escola Politécnica da USP, João Gurgel priorizou a leveza, a resistência à corrosão (utilizando fibra de vidro) e a mecânica simplificada baseada em plataformas Volkswagen.</p>
-        </section>
+        <!-- Post do Guilherme -->
+        <article class="card">
+            <h2>Post do Guilherme</h2>
+            <div class="meta">Publicado por Guilherme | Colégio Estadual Eron Domingues</div>
+            <p>Olá! Este é o meu espaço para compartilhar ideias, trabalhos e projetos desenvolvidos durante as aulas deste ano letivo no Eron Domingues. Curtindo muito aprender coisas novas na rotina escolar!</p>
+        </article>
 
-        <section class="card">
-            <h2>Inovação e Resistência</h2>
-            <p>Diferente de montadoras estrangeiras instaladas no Brasil, a Gurgel focou em nichos específicos, como utilitários robustos para estradas de terra e fazendas. Um dos seus maiores diferenciais foi o desenvolvimento do <em>Plasteel</em>, um material misturando aço e fibra de vidro extremamente resistente a impactos e livre de ferrugem.</p>
-        </section>
-
-        <section class="card">
-            <h2>Modelos Icônicos</h2>
-            <div class="gallery">
-                <div class="car-item">
-                    <img src="https://wikimedia.org" alt="Gurgel X-12">
-                    <h3>Gurgel X-12</h3>
-                    <p>O maior sucesso da marca, um jipe resistente voltado para o lazer e uso misto, famoso pela tração traseira otimizada.</p>
-                </div>
-                <div class="car-item">
-                    <img src="https://wikimedia.org" alt="Gurgel BR-800">
-                    <h3>Gurgel BR-800</h3>
-                    <p>O primeiro carro 100% brasileiro projetado de raiz, lançado em 1988, com motor econômico de dois cilindros.</p>
-                </div>
-                <div class="car-item">
-                    <img src="https://wikimedia.org" alt="Gurgel Supermini">
-                    <h3>Gurgel Supermini</h3>
-                    <p>Evolução refinada do BR-800, trazia melhor acabamento interno e desempenho aprimorado para os centros urbanos.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="card">
-            <h2>O Fim da Jornada</h2>
-            <p>Aberturas de mercado e a forte concorrência no início dos anos 90, somadas a dificuldades financeiras e falta de incentivos fiscais duradouros para veículos totalmente nacionais, levaram a empresa a decretar concordata em 1993 e falência anos depois. Apesar disso, o legado de João Gurgel permanece vivo na história da engenharia do país.</p>
-        </section>
+        <!-- Post do Raphael -->
+        <article class="card raphael">
+            <h2>Post do Raphael</h2>
+            <div class="meta">Publicado por Raphael | Colégio Estadual Eron Domingues</div>
+            <p>E aí, pessoal! Aqui vou registrar minhas experiências, estudos e atividades com a turma. Acompanhem nossas postagens para saber tudo o que rola no dia a dia da nossa escola.</p>
+        </article>
     </div>
 
     <footer>
-        <p>Página desenvolvida com foco na história automotiva do Brasil.</p>
+        <p>&copy; 2026 - Guilherme e Raphael. Todos os direitos reservados.</p>
     </footer>
 
 </body>
