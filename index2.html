@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Blog do Guilherme e do Raphael</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --accent: #ed8936;
+            --bg: #f7fafc;
+            --text: #2d3748;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            margin-top: 0.5rem;
+            color: #cbd5e0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary);
+        }
+        .card.raphael {
+            border-left-color: var(--accent);
+        }
+        .card.contato {
+            border-left-color: #4a5568;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .card.raphael h2 {
+            color: var(--accent);
+        }
+        .card.contato h2 {
+            color: #4a5568;
+        }
+        .meta {
+            font-size: 0.85rem;
+            color: #a0aec0;
+            margin-bottom: 1rem;
+        }
+        /* Estilos adicionais para links de navegação */
+        .nav-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        /* Estilos da lista de contatos */
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        .contact-list li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .contact-list strong {
+            color: var(--primary);
+        }
+        .contact-list a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Canais de Contato | Eron Domingues</h1>
+        <p>Espaço de Guilherme e Raphael</p>
+    </header>
+
+    <div class="container">
+        <!-- Link para voltar à página principal -->
+        <a href="index.html" class="nav-link">&larr; Voltar para a Página Inicial</a>
+
+        <article class="card">
+            <h2>Informações de Contato</h2>
+            <div class="meta">Fale diretamente com nossa equipe escolar</div>
+            
+            <p>Se você tem dúvidas, sugestões ou quer falar sobre as atividades desenvolvidas no Colégio Estadual Eron Domingues, utilize os canais abaixo:</p>
+            
+            <ul class="contact-list">
+                <li><strong>E-mail do Projeto:</strong> <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
+                <li><strong>Telefone Comercial:</strong> <a href="tel:+5541999999999">(41) 99999-9999</a></li>
+                <li><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 13h às 17h</li>
+            </ul>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Guilherme e Raphael. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
